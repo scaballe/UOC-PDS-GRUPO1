@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><packages version="1.3">
+  <package exploded="false" inWorkspace="true" name="PracticalCaseStudyJEE.jar" todir="/PracticalCaseStudyJEE" type="jar">
+    <fileset dir="bin" excludes="client/, man*/" flatten="false" inWorkspace="true" includes="**/*.class, **/*.properties">
+      <properties/>
+    </fileset>
+    <folder name="META-INF">
+      <fileset dir="src/META-INF" flatten="false" inWorkspace="true" includes="p**">
+        <properties/>
+      </fileset>
+      <properties/>
+    </folder>
+    <properties>
+      <property name="org.jboss.ide.eclipse.as.core.packages.ModuleIDPropertyKey" value="1320490195041"/>
+    </properties>
+  </package>
+  <package exploded="false" inWorkspace="true" name="PracticalCaseStudyJEE.war" todir="/PracticalCaseStudyJEE" type="org.jboss.ide.eclipse.as.core.packages.warPackage">
+    <fileset dir="docroot" flatten="false" inWorkspace="true" includes="**">
+      <properties/>
+    </fileset>
+    <folder name="WEB-INF">
+      <fileset dir="/PracticalCaseStudyJEE/docroot/WEB-INF" flatten="false" inWorkspace="true" includes="**/*">
+        <properties/>
+      </fileset>
+      <folder name="classes\managedbean">
+        <fileset dir="bin/managedbean" flatten="false" inWorkspace="true" includes="**">
+          <properties/>
+        </fileset>
+        <properties/>
+      </folder>
+      <properties/>
+    </folder>
+    <properties>
+      <property name="org.jboss.ide.eclipse.as.core.packages.ModuleIDPropertyKey" value="1321091898377"/>
+    </properties>
+  </package>
+  <package exploded="false" inWorkspace="true" name="PracticalCaseStudyJEE.ear" todir="/PracticalCaseStudyJEE" type="org.jboss.ide.eclipse.as.core.packages.earPackageType">
+    <fileset dir="" flatten="false" inWorkspace="true" includes="*.war, *.jar">
+      <properties/>
+    </fileset>
+    <folder name="META-INF">
+      <fileset dir="src/META-INF" flatten="false" inWorkspace="true" includes="application.xml">
+        <properties/>
+      </fileset>
+      <properties/>
+    </folder>
+    <properties>
+      <property name="org.jboss.ide.eclipse.as.core.packages.ModuleIDPropertyKey" value="1321092137799"/>
+      <property name="org.jboss.ide.eclipse.as.core.model.PackagesListener.DeployAfterBuild" value="true"/>
+      <property name="org.jboss.ide.eclipse.as.core.model.PackagesListener.DeployServers" value=""/>
+    </properties>
+  </package>
+  <properties/>
+</packages>

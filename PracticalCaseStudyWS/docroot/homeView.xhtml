@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="./headerView.xhtml">
+	<ui:define name="content">
+		
+		<table width="100%" >
+			<td rowspan="1" colspan="1">
+				<div class="content" align="center">
+					<h1>Welcome</h1>
+					<h:form>
+					<h:commandButton image="#{resource['images:splash.gif']}" height="355" width="350" align="middle" border="0" 
+						actionListener="#{pets.categoryMap}" action ="#{pets.listPets}" immediate="true"/>
+					</h:form>
+				</div>
+			</td>
+		</table>
+	</ui:define>
+</ui:composition>
+</html>

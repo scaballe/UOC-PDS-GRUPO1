@@ -1,0 +1,96 @@
+CREATE TABLE practicalcase.category
+(
+  "name" text NOT NULL,
+  CONSTRAINT "Category_pkey" PRIMARY KEY (name)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE practicalcase.category OWNER TO "USER";
+
+CREATE TABLE practicalcase.pet
+(
+  id integer NOT NULL,
+  datebirth date,
+  photo text,
+  "name" text,
+  description text,
+  price double precision,
+  category text,
+  CONSTRAINT "Pet_pkey" PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE practicalcase.pet OWNER TO "USER";
+
+insert into practicalcase.category (name) values ('FISH');
+insert into practicalcase.category (name) values ('DOGS');
+insert into practicalcase.category (name) values ('REPTILES');
+insert into practicalcase.category (name) values ('CATS');
+insert into practicalcase.category (name) values ('BIRDS');
+
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (1,'01-12-2011','fish1.gif','fish1','fish yelow1',0.80,'FISH');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (2,'01-12-2011','fish2.gif','fish2','fish yelow2',0.80,'FISH');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (3,'01-12-2011','fish3.gif','fish3','fish yelow3',0.80,'FISH');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (4,'01-12-2011','fish4.gif','fish4','fish yelow4',0.80,'FISH');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (5,'01-12-2011','lizard1.gif','reptil1','reptil ye-low1',0.80,'REPTILES');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (6,'01-12-2011','lizard2.gif','reptil2','reptil ye-low2',0.80,'REPTILES');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (7,'01-12-2011','lizard3.gif','reptil3','reptil ye-low3',0.80,'REPTILES');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (8,'01-12-2011','lizard4.gif','reptil4','reptil ye-low4',0.80,'REPTILES');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (9,'01-12-2011','bird1.gif','bird1','bird ye-low1',0.80,'BIRDS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (10,'01-12-2011','bird2.gif','bird2','bird ye-low2',0.80,'BIRDS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (11,'01-12-2011','bird3.gif','bird3','bird ye-low3',0.80,'BIRDS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (12,'01-12-2011','bird4.gif','bird4','bird ye-low4',0.80,'BIRDS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (13,'01-12-2011','bird5.gif','bird5','bird ye-low1',0.80,'BIRDS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (14,'01-12-2011','bird6.gif','bird6','bird ye-low2',0.80,'BIRDS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (15,'01-12-2011','dog1.gif','dog1','dog yelow1',0.80,'DOGS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (16,'01-12-2011','dog2.gif','dog2','dog yelow2',0.80,'DOGS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (17,'01-12-2011','dog3.gif','dog3','dog yelow3',0.80,'DOGS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (18,'01-12-2011','dog4.gif','dog4','dog yelow4',0.80,'DOGS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (19,'01-12-2011','dog5.gif','dog5','dog yelow1',0.80,'DOGS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (20,'01-12-2011','dog6.gif','dog6','dog yelow2',0.80,'DOGS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (21,'01-12-2011','cat1.gif','cat1','cat yelow1',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (22,'01-12-2011','cat2.gif','cat2','cat yelow2',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (23,'01-12-2011','cat3.gif','cat3','cat yelow3',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (24,'01-12-2011','cat4.gif','cat4','cat yelow4',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (25,'01-12-2011','cat5.gif','cat5','cat yelow1',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (26,'01-12-2011','cat6.gif','cat6','cat yelow2',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (27,'01-12-2011','cat7.gif','cat7','cat yelow1',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (28,'01-12-2011','cat8.gif','cat8','cat yelow2',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (29,'01-12-2011','cat9.gif','cat9','cat yelow3',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (30,'01-12-2011','cat10.gif','cat10','cat yelow4',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (31,'01-12-2011','cat11.gif','cat11','cat yelow1',0.80,'CATS');
+insert into practicalcase.pet(id, datebirth, photo, name, description, price, category) 
+values (32,'01-12-2011','cat12.gif','cat12','cat yelow2',0.80,'CATS');

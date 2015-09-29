@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+   <f:metadata>
+      <f:viewParam name="idPet" value="#{petshow.idPet}"/>
+   </f:metadata>
+
+  <ui:composition template="./headerView.xhtml">
+	<ui:define name="content">
+		<br/>
+ 		<h:form>
+ 			<div align="center">
+				<table border="1" width="50%" id="table1">
+					<tr>
+						<td width="212" rowspan="6">
+      						<p align="left" />
+   							<h:graphicImage border="0" url="resources/imganimals/#{petshow.dataPet.photo}" width="200"/>
+      					</td>
+						<td width="155">
+							<p align="left"/><i><b><font size="4" face="Century">Category:</font></b></i>
+						</td>
+						<td>
+							<p align="left"/><h:outputText value="#{petshow.dataPet.category.name}" />
+						</td>
+					</tr>
+					<tr>
+						<td width="155">
+							<p align="left"/><i><b><font size="4" face="Century">Id:</font></b></i></td>
+						<td>
+							<p align="left"/><h:outputText value="#{petshow.dataPet.id}" />
+						</td>
+					</tr>
+					<tr>
+						<td width="155">
+							<p align="left"/><i><b><font size="4" face="Century">Name:</font></b></i>
+						</td>
+						<td>
+							<p align="left"/><h:outputText value="#{petshow.dataPet.name}" />
+						</td>
+					</tr>
+					<tr>
+						<td width="155">
+							<p align="left"/><i><b><font size="4" face="Century">Date Birth:</font></b></i>
+						</td>
+						<td>
+							<p align="left"/>&nbsp;<h:outputText value="#{petshow.dataPet.datebirth}" title="Date Birth" />
+						</td>
+					</tr>
+					<tr>
+						<td width="155">
+							<p align="left"/><i><b><font size="4" face="Century">Description:</font></b></i>
+						</td>
+						<td>
+							<p align="left"/><h:outputText value="#{petshow.dataPet.description}" />
+						</td>
+					</tr>
+					<tr>
+						<td width="155">
+							<p align="left"/><i><b><font size="4" face="Century">Price:</font></b></i>
+						</td>
+						<td>
+							<p align="left"/><h:outputText value="#{petshow.dataPet.price}" />
+						</td>
+					</tr>
+				</table> 	
+			</div> 
+			<p align="center">
+				<h:commandLink value="Return" action="listPetsView" />
+			</p>
+ 		</h:form>
+	</ui:define>
+  </ui:composition>
+</html>

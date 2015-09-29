@@ -1,0 +1,13 @@
+<application>
+  <display-name>PracticalCaseStudy</display-name>
+  <module>
+    <web>
+      <web-uri>PracticalCaseStudyWS.war</web-uri>
+      <context-root>/PracticalCaseWS</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>PracticalCaseStudyWS.jar</ejb>
+  </module>
+</application>
+

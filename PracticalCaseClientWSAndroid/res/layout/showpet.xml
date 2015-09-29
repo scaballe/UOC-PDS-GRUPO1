@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+	
+
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="282dp"
+	    android.setVerticalScrollBarEnabled="true"
+	    android:gravity="center_horizontal"
+	    android:padding="10px" >
+
+
+   		<TextView
+   		    android:id="@+id/label_id"
+   		    style="@style/view_text"
+   		    android:layout_width="100dp"
+   		    android:layout_height="wrap_content"
+   		    android:text="ID number:" />
+
+
+
+
+		<TextView
+		    android:id="@+id/idnumber"
+		    style="@style/view_text"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignTop="@+id/label_id"
+		    android:layout_toRightOf="@+id/label_id"
+		    android:text="ID" />
+
+
+
+   		<TextView
+   		    android:id="@+id/label_date"
+   		    style="@style/view_text"
+   		    android:layout_width="100dp"
+   		    android:layout_height="wrap_content"
+   		    android:layout_below="@id/idnumber"
+   		    android:text="Birth date:" />
+
+
+
+		<TextView
+		    android:id="@+id/date"
+		    style="@style/view_text"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignTop="@+id/label_date"
+		    android:layout_toRightOf="@+id/label_date"
+		    android:text="date" />
+
+
+
+   		<TextView
+   		    android:id="@+id/label_name"
+   		    style="@style/view_text"
+   		    android:layout_width="82dp"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignLeft="@+id/label_date"
+   		    android:layout_alignRight="@+id/label_date"
+   		    android:layout_below="@id/date"
+   		    android:text="Pet name:" />
+
+
+
+		<TextView
+		    android:id="@+id/name"
+		    style="@style/view_text"
+		    android:layout_width="82dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignRight="@+id/date"
+		    android:layout_alignTop="@+id/label_name"
+		    android:layout_toRightOf="@+id/label_name"
+		    android:text="name" />
+
+
+
+   		<TextView
+   		    android:id="@+id/label_description"
+   		    style="@style/view_text"
+   		    android:layout_width="82dp"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignLeft="@+id/label_name"
+   		    android:layout_below="@id/name"
+   		    android:layout_toLeftOf="@+id/date"
+   		    android:text="Description:" />
+
+
+		<TextView
+		    android:id="@+id/description"
+		    style="@style/view_text"
+		    android:layout_width="82dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignRight="@+id/name"
+		    android:layout_alignTop="@+id/label_description"
+		    android:layout_toRightOf="@+id/label_description"
+		    android:text="description" />
+		
+
+
+   		<TextView
+   		    android:id="@+id/label_price"
+   		    android:layout_width="82dp"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignLeft="@+id/label_description"
+   		    android:layout_alignRight="@+id/label_description"
+   		    android:layout_below="@id/description"
+   		    android:text="Price:" />
+
+
+		<TextView
+		    android:id="@+id/price"
+		    style="@style/view_text"
+		    android:layout_width="82dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignRight="@+id/description"
+		    android:layout_alignTop="@+id/label_price"
+		    android:layout_toRightOf="@+id/label_price"
+		    android:text="price" />
+		
+
+
+   		<TextView
+   		    android:id="@+id/label_category"
+   		    style="@style/view_text"
+   		    android:layout_width="82dp"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignLeft="@+id/label_price"
+   		    android:layout_below="@id/price"
+   		    android:layout_toLeftOf="@+id/price"
+   		    android:text="Category:" />
+
+
+		<TextView
+		    android:id="@+id/category"
+		    style="@style/view_text"
+		    android:layout_width="82dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignRight="@+id/price"
+		    android:layout_alignTop="@+id/label_category"
+		    android:layout_toRightOf="@+id/label_category"
+		    android:text="category" />
+
+		<ImageView
+		    android:id="@+id/photo"
+		    android:layout_width="220px"
+		    android:layout_height="220px"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:src="@drawable/ic_launcher" />
+									
+	</RelativeLayout>
+	
+</ScrollView>
